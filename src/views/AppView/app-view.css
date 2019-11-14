@@ -1,0 +1,147 @@
+body {
+  position: relative;
+  margin: 0;
+  background: #121212;
+  overflow-x: hidden;
+}
+
+.app {
+  height: 100vh;
+}
+
+.header {
+  background: #282828;
+  padding: 13px 0;
+}
+
+.form {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.search {
+  width: 85%;
+  height: 28px;
+  padding: 0 5px;
+  border: 1px solid #303030;
+  background: #121212;
+  color: #e3e3e3;
+}
+
+.result-container {
+  max-width: 1270px;
+  height: 450px;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: #121212;
+  perspective: 500px;
+  margin: 0 auto;
+}
+
+.list-elem {
+  display: inline-block;
+  margin: 10px;
+}
+
+.list-elem:hover {
+  transition: all 1s cubic-bezier(0.54, -0.4, 0.29, 0.94);
+  transform: scale(1.1);
+}
+
+.video-instance {
+  margin-left: 100px;
+  overflow: hidden;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 290px;
+  height: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #e0e0e0;
+}
+
+.video-preview {
+  width: 100%;
+  height: 40%;
+}
+
+.video-title {
+  color: whitesmoke;
+  overflow: hidden;
+  padding: 5px;
+  width: 100%;
+  height: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: normal;
+  background: #949494;
+}
+
+.video-title:hover {
+  background: #ff0000;
+}
+
+.video-author, .video-date, .video-views {
+  padding-left: 5%;
+  width: 100%;
+  font-size: 18px;
+}
+
+.video-description {
+  padding: 5px;
+  height: 20%;
+  white-space: normal;
+}
+
+.slide-left, .slide-right {
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  background: white;
+}
+
+.additional-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  color: #ffffff;
+}
+
+.tool-tip-view {
+  color: white;
+  font-size: 30px;
+  top: 60px;
+  display: block;
+  position: relative;
+}
+
+.tool-tip {
+  width: 75px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1244px) {
+  .result-container {
+    max-width: 630px;
+  }
+}
+
+@media only screen and (max-width: 588px) {
+  .result-container {
+    max-width: 300px;
+  }
+}
